@@ -523,6 +523,10 @@ h4 {
   width: 100vw;
   left: 100%;
 }
+/* contest */
+.contest {
+  padding: 60px 0;
+}
 .contest__swiper {
   overflow: hidden;
   margin-top: 120px;
@@ -534,4 +538,114 @@ h4 {
 .contest__swiper .swiper-wrapper {
   width: 1670px;
   margin: 0 auto;
+}
+/* commission */
+.commission {
+  overflow: hidden;
+  padding: 120px 0;
+}
+.commission__title {
+  color: #101010;
+  max-width: 400px;
+}
+.commission__title::after {
+  left: 85%;
+  max-width: 1140px;
+  width: 100vw;
+}
+.commission-button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e4dbcf;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.commission__arrow {
+  transform: rotate(-90deg);
+}
+.commission__arrow.second {
+  transform: rotate(90deg);
+}
+.swiper-button-disabled {
+  cursor: inherit;
+}
+.swiper-button-disabled path {
+  stroke: #e4dbcf;
+}
+.commission__btn-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: -145px;
+  display: flex;
+  right: 0;
+}
+.commission__swiper {
+  width: 1670px;
+  overflow: visible;
+  margin: 0 auto;
+}
+.commission__card {
+  max-width: 405px;
+}
+.commission__name {
+  color: #101010;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+.commission__text {
+  color: #101010;
+  -webkit-line-clamp: 10;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.6em;
+}
+.commission__content {
+  padding: 30px 20px 10px 30px;
+}
+.commission__swiper {
+  margin-top: 80px;
+  position: relative;
+}
+.commission__img {
+  transition: transform 0.4s ease;
+}
+.commission__img:hover {
+  transform: scale(1.05);
+}
+.commission__photo {
+  overflow: hidden;
+}
+/* how  */
+.how {
+  overflow: hidden;
+  padding: 60px 0;
+}
+.how__title {
+  font-size: 100px;
+  width: fit-content;
+  margin: 0;
+  width: max-content;
+}
+.how__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.how__line {
+  display: block;
+  max-width: 745px;
+  width: 100%;
+  height: 1px;
+  background-color: #c6a67d;
+}
+.how__all {
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: underline;
+  color: #101010;
 }

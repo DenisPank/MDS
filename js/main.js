@@ -6,11 +6,18 @@ for (let i = 0; i < bg.length; i++) {
     bg[i].style.transform = "translate(-" + x * 15 + "px, -" + y * 15 + "px)";
   });
 }
-const swiper = new Swiper(".contest__swiper", {
+const contestSwiper = new Swiper(".contest__swiper", {
   slidesPerView: 5.8,
   spaceBetween: 120,
   loop: true,
   autoplay: {
     delay: 2000,
   },
+});
+const commissionSwiper = new Swiper(".commission__swiper", {
+  navigation: {
+    nextEl: ".commission-button-next",
+    prevEl: ".commission-button-prev",
+  },
+  slidesPerView: 4,
 });
