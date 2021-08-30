@@ -15,14 +15,24 @@ burger.addEventListener("click", (event) => {
 });
 
 const contestSwiper = new Swiper(".contest__swiper", {
+  slidesPerView: 5.8,
+  spaceBetween: 120,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
   breakpoints: {
     320: {
       slidesPerView: 2,
     },
     480: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
-    640: {},
+    640: {
+      spaceBetween: 0,
+      slidesPerView: 2.3,
+    },
     768: {
       spaceBetween: 30,
       slidesPerView: 3,
@@ -35,12 +45,6 @@ const contestSwiper = new Swiper(".contest__swiper", {
       slidesPerView: 5.8,
     },
   },
-  slidesPerView: 5.8,
-  spaceBetween: 120,
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
 });
 const commissionSwiper = new Swiper(".commission__swiper", {
   navigation: {
@@ -50,10 +54,10 @@ const commissionSwiper = new Swiper(".commission__swiper", {
   slidesPerView: 4,
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     480: {
-      slidesPerView: 3,
+      slidesPerView: 1,
     },
     576: {
       slidesPerView: 1.2,
