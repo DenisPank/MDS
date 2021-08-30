@@ -6,7 +6,35 @@ for (let i = 0; i < bg.length; i++) {
     bg[i].style.transform = "translate(-" + x * 15 + "px, -" + y * 15 + "px)";
   });
 }
+const burger = document.querySelector(".header__burger");
+const menu = document.querySelector(".header__menu");
+
+burger.addEventListener("click", (event) => {
+  const target = event.target;
+  menu.classList.toggle("visible");
+});
+
 const contestSwiper = new Swiper(".contest__swiper", {
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 3,
+    },
+    640: {},
+    768: {
+      spaceBetween: 30,
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 60,
+    },
+    1400: {
+      slidesPerView: 5.8,
+    },
+  },
   slidesPerView: 5.8,
   spaceBetween: 120,
   loop: true,
@@ -20,4 +48,27 @@ const commissionSwiper = new Swiper(".commission__swiper", {
     prevEl: ".commission-button-prev",
   },
   slidesPerView: 4,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 1.2,
+    },
+    768: {
+      slidesPerView: 1.7,
+    },
+    992: {
+      slidesPerView: 2.2,
+    },
+    1200: {
+      slidesPerView: 2.7,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  },
 });

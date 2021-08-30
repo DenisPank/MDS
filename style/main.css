@@ -121,10 +121,21 @@ h4 {
   );
   border-image-slice: 1;
 }
+.date {
+  font-weight: 400;
+  font-size: 17px;
+  color: #6d6d6d;
+}
 /* header  */
 .header__wrapper {
   padding: 40px 0;
   border-bottom: 1px solid #c6a67d;
+}
+.header__burger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #ab821d;
 }
 .header__item {
   margin: 0 35px;
@@ -206,6 +217,9 @@ h4 {
 }
 .footer__top-parallax {
   background-image: url("../image/ofter/bg-footer.svg");
+}
+.footer__wrapper {
+  display: flex;
 }
 .mouse-parallax-bg {
   position: absolute;
@@ -630,22 +644,93 @@ h4 {
   width: fit-content;
   margin: 0;
   width: max-content;
+  line-height: 0.7em;
 }
 .how__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-.how__line {
+.how__line,
+.new__line {
   display: block;
   max-width: 745px;
   width: 100%;
   height: 1px;
   background-color: #c6a67d;
 }
-.how__all {
+.how__all,
+.new__all {
   font-weight: 600;
   font-size: 17px;
   text-decoration: underline;
   color: #101010;
+}
+.how__wrapper-photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 80px;
+}
+.how__img {
+  width: 100%;
+}
+/* new  */
+.new {
+  padding: 120px 0;
+}
+.new__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.new__line {
+  max-width: 1235px;
+  width: 100%;
+}
+.new__title {
+  color: #101010;
+  line-height: 0.7em;
+}
+.new__inner {
+  max-width: 430px;
+}
+.new__title.main-text {
+  line-height: 1.3em;
+  margin: 15px 0;
+}
+.new__more {
+  margin-top: 15px;
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: #101010;
+}
+.new__text {
+  line-height: 1.6em;
+  color: #101010;
+}
+.new__arrow {
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+.new__more:hover .new__arrow {
+  transform: translateX(10px);
+}
+.new__block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+/* partners */
+.partners {
+  overflow: hidden;
+  padding: 60px 0 180px;
+}
+.partners__title {
+  width: fit-content;
+  color: #101010;
+}
+.partners__title::after {
+  left: calc(100% + 40px);
 }

@@ -2,29 +2,283 @@
   .container {
     max-width: 1400px;
   }
+  .prize__inner,
+  .prize__block {
+    max-width: 330px;
+  }
+  .prize__block {
+    padding: 20px;
+  }
+  .prize__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .commission__title::after {
+    max-width: 980px;
+  }
+  .how__line {
+    max-width: 395px;
+  }
+  .new__line {
+    max-width: 925px;
+  }
 }
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1200px;
+  }
+  .header__menu {
+    margin-right: 0px;
+  }
+  .header__content-text {
+    max-width: 580px;
+  }
+  .prize__block {
+    padding: 10px;
+  }
+  .prize__inner,
+  .prize__block {
+    max-width: 280px;
+    height: 385px;
+  }
+  .prize__subtitle {
+    font-size: 16px;
+  }
+  .prize__text {
+    font-size: 14px;
+  }
+  .part__text {
+    font-size: 17px;
+  }
+  .part__subtitle {
+    font-size: 35px;
+  }
+  .calendar__item {
+    max-width: 200px;
+  }
+  .calendar__title {
+    font-size: 17px;
+  }
+  .calendar__text {
+    font-size: 15px;
+  }
+  .commission__swiper {
+    max-width: 1170px;
+  }
+  .how__line {
+    max-width: 200px;
+  }
+  .commission__title::after {
+    max-width: 630px;
+  }
+  .new__line {
+    max-width: 60%;
+  }
+  .new__inner {
+    max-width: 370px;
+  }
+  .partners {
+    padding: 60px 0 120px;
   }
 }
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 992px;
   }
+  .header__content-text {
+    max-width: 440px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .prize__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .prize__inner,
+  .prize__block {
+    max-width: 310px;
+    height: 525px;
+  }
+  .prize__block {
+    padding: 28px;
+  }
+  .part__title {
+    font-size: 70px;
+  }
+  .part__cap-text {
+    font-size: 25px;
+  }
+  .part__wrapper-cap figure {
+    max-width: 220px;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .part__card-second {
+    padding: 30px 20px 30px 30px;
+  }
+  .part__card-first {
+    max-width: 500px;
+    padding: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .commission__swiper {
+    max-width: 963px;
+  }
+  .commission__title::after {
+    max-width: 100%;
+  }
+  .calendar__number {
+    font-size: 60px;
+    text-align: center;
+  }
+  .calendar__title {
+    margin: 10px 0 15px;
+  }
+  .how__title {
+    font-size: 70px;
+  }
+  .commission__title::after {
+    left: 95%;
+  }
+  .commission__btn-wrapper {
+    top: -135px;
+  }
+  .footer__phone,
+  .footer__mail-link {
+    font-size: 30px;
+  }
+  .footer__about {
+    margin-left: 10px;
+  }
 }
 @media screen and (max-width: 992px) {
   .container {
     max-width: 768px;
+  }
+
+  .header__content {
+    flex-direction: column;
+  }
+  .prize__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .prize__block {
+    padding: 20px;
+  }
+  .prize__inner,
+  .prize__block {
+    max-width: calc(100% - 10px);
+    height: 525px;
+  }
+  .part__card-first {
+    max-width: 430px;
+  }
+  .calendar {
+    padding: 60px 0;
+  }
+  .commission {
+    padding: 30px 0;
+  }
+  .part__title {
+    max-width: 100%;
+  }
+  .header__content {
+    margin-top: 40px;
+  }
+  .partners {
+    padding: 60px 0;
+  }
+  .calendar div {
+    flex-direction: column;
+  }
+  .calendar__item {
+    max-width: 140px;
+    margin-top: 20px;
+  }
+  .title-line::after {
+    display: none;
+  }
+  .contest__swiper {
+    margin-top: 60px;
+  }
+  .commission__swiper {
+    max-width: 736px;
+  }
+  .how__line,
+  .new__line {
+    display: none;
+  }
+  .how__title {
+    line-height: 1em;
+    font-size: 50px;
+  }
+  .how__wrapper-photo {
+    margin-top: 40px;
+  }
+  .new__block {
+    overflow-x: scroll;
+  }
+  .new__title {
+    width: 325px;
+  }
+  .new__inner {
+    margin-right: 30px;
+  }
+  .new {
+    padding: 60px 0;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__menu {
+    margin: 0;
+  }
+  .footer__about {
+    margin-left: auto;
+    margin-bottom: 90px;
+  }
+  .footer__contact {
+    margin-left: auto;
+  }
+  .header__item {
+    margin: 0 10px;
+  }
+  .header {
+    padding-bottom: 90px;
+  }
+  .prize {
+    padding: 60px 0;
+  }
+  .part {
+    padding: 30px 0;
+  }
+  .footer__about {
+    margin-left: auto;
+    width: 100%;
+    max-width: 340px;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 576px;
   }
+  .header__burger {
+    display: block;
+  }
+  .header__menu {
+    position: absolute;
+    width: 100%;
+  }
+  .header__list {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 576px) {
-  body {
+  .text {
     font-size: 14px;
   }
   h4 {
