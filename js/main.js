@@ -14,6 +14,13 @@ burger.addEventListener("click", (event) => {
   menu.classList.toggle("visible");
 });
 
+var smoothJumpUp = function () {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    window.scrollBy(0, -50);
+    setTimeout(smoothJumpUp, 10);
+  }
+};
+
 const contestSwiper = new Swiper(".contest__swiper", {
   slidesPerView: 5.8,
   spaceBetween: 120,
@@ -23,7 +30,8 @@ const contestSwiper = new Swiper(".contest__swiper", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 2.2,
+      spaceBetween: 30,
     },
     480: {
       slidesPerView: 2,
@@ -55,12 +63,15 @@ const commissionSwiper = new Swiper(".commission__swiper", {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
     480: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
     576: {
       slidesPerView: 1.2,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 1.7,

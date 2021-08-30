@@ -785,3 +785,6 @@ h4 {
 .partners__title::after {
   left: calc(100% + 40px);
 }
+.prize__more {
+  display: none;
+}

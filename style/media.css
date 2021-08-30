@@ -261,6 +261,9 @@
     width: 100%;
     max-width: 340px;
   }
+  .footer__arrow {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -285,6 +288,7 @@
     background-repeat: no-repeat;
     background-position: left top;
     transition: opacity 0.4s ease;
+    pointer-events: none;
   }
   .header__list {
     flex-direction: column;
@@ -320,12 +324,13 @@
     display: block;
   }
   .header__menu-mobil {
-    width: 576px;
+    max-width: 546px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
   }
   .header__menu.visible {
     opacity: 1;
+    pointer-events: all;
   }
   .part__wrapper {
     flex-direction: column;
@@ -344,6 +349,23 @@
   .footer__about {
     max-width: fit-content;
   }
+  .footer__bottom-wrapper {
+    flex-direction: column;
+  }
+  .footer__text-bottom {
+    margin: 5px 0;
+  }
+  .footer__link-bottom,
+  .footer__link-bottom {
+    width: fit-content;
+  }
+  .mouse-parallax-bg {
+    background-position: -340px -30px;
+    background-size: 215%;
+  }
+  .footer__mail::after {
+    display: none;
+  }
 }
 @media screen and (max-width: 576px) {
   .text {
@@ -355,6 +377,288 @@
   }
   .container {
     max-width: 100%;
+  }
+  .prize__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .header__content-img {
+    max-width: 175px;
+  }
+  .header__content {
+    align-items: flex-start;
+  }
+  .header__cap-text {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .header__content-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__title {
+    order: 0;
+    margin: 0;
+    margin-top: 130px;
+  }
+  .header__subtitle {
+    order: 1;
+    margin: 20px 0 30px;
+  }
+  .header__date {
+    order: 2;
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .header {
+    padding-bottom: 50px;
+  }
+  .prize__inner,
+  .prize__block {
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+  }
+  .prize__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .prize__btn {
+    display: none;
+  }
+  .prize__text {
+    display: none;
+  }
+  .prize__more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #947c5c;
+    display: flex;
+  }
+  .prize__more .new__arrow {
+    margin-left: 10px;
+  }
+  .prize__more:hover .new__arrow {
+    transform: translateX(10px);
+  }
+  .prize__subtitle {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .prize__inner .text {
+    display: block;
+  }
+  .part {
+    padding: 20px 0;
+  }
+  .part__title {
+    font-size: 46px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .part__wrapper-cap {
+    width: 175px;
+  }
+  .part__cap-text {
+    font-size: 15px;
+  }
+  .part__card-first {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 20px;
+  }
+  .part__subtitle {
+    font-size: 30px;
+  }
+  .part__text {
+    font-size: 14px;
+  }
+  .part__btn {
+    margin-top: 40px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .part__btn {
+    padding: 23px 30px;
+    width: 100%;
+  }
+  .part__card-second {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .calendar__list {
+    flex-direction: column;
+  }
+  .calendar__number {
+    font-size: 80px;
+    text-align: start;
+    width: fit-content;
+  }
+  .calendar__number-wrapper {
+    width: fit-content;
+    grid-row: 1/3;
+  }
+  .calendar__item {
+    max-width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+  }
+  .calendar__title {
+    margin: 0;
+    align-self: center;
+  }
+  .calendar__text {
+    align-self: center;
+  }
+  .calendar__list::after {
+    height: calc(100% - 40px);
+    width: 1px;
+    bottom: 0;
+    left: 18px;
+    transform: translateY(-10%);
+  }
+  .contest__title {
+    font-weight: 600;
+  }
+  .contest__swiper {
+    margin-top: 50px;
+  }
+  .contest__swiper .swiper-wrapper {
+    width: 330px;
+  }
+  .contest__item {
+    max-width: 220px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .commission__swiper {
+    margin-top: 40px;
+    max-width: 330px;
+  }
+  .commission__content {
+    padding: 30px 20px 10px 20px;
+  }
+  .commission__btn-wrapper {
+    display: none;
+  }
+  .how__title {
+    font-size: 46px;
+  }
+  .how__all,
+  .new__all {
+    display: none;
+  }
+  .how__wrapper-photo {
+    margin-top: 40px;
+    display: flex;
+    overflow-x: scroll;
+    grid-gap: 0;
+    width: 100%;
+  }
+  .how {
+    overflow: visible;
+  }
+  .how__img {
+    max-width: 85vw;
+    width: 100vw;
+    height: 100%;
+  }
+  .how__photo {
+    margin-right: 10px;
+  }
+  .new {
+    padding: 20px 0;
+  }
+  .new__block {
+    margin-top: 40px;
+  }
+  .date {
+    font-size: 14px;
+  }
+  .new__title.main-text {
+    font-size: 17px;
+  }
+  .new__more {
+    font-size: 14px;
+  }
+  .partners {
+    padding: 60px 0 100px;
+  }
+  .footer__about,
+  .footer__menu {
+    display: none;
+  }
+  .footer__contact {
+    margin: 0;
+    text-align: start;
+  }
+  .footer__network {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    order: 0;
+    margin: 60px 0 40px;
+  }
+  .footer__network-link {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .footer__phone,
+  .footer__mail-link,
+  .footer__mail {
+    font-size: 17px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__mail {
+    margin: 10px 0;
+    order: 2;
+  }
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__phone {
+    order: 1;
+  }
+  .footer__top {
+    padding: 20px 0 40px;
+    position: static;
+  }
+  .footer__bottom,
+  .footer__top {
+    background-color: transparent;
+    overflow: visible;
+  }
+  .mouse-parallax-bg {
+    display: none;
+  }
+  .footer {
+    background-color: #101010;
+    position: relative;
+    background-image: url("../image/ofter/line-mobil.svg");
+    background-position: -261px -30px;
+  }
+  .footer__link-bottom,
+  .footer__text-bottom {
+    color: #6d6d6d;
+  }
+  .footer__link-bottom:nth-last-child(1) {
+    display: none;
+  }
+  .footer__arrow {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 425px) {
