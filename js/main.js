@@ -23,7 +23,6 @@ var smoothJumpUp = function () {
 
 const form = document.querySelector(".form__btn");
 const formShipped = document.querySelector(".form__shipped");
-
 form.addEventListener("click", (event) => {
   const target = event.target;
   event.preventDefault();
@@ -34,13 +33,17 @@ const popapModal = document.querySelector(".popap-modal");
 closeForm.addEventListener("click", (event) => {
   const target = event.target;
   popapModal.classList.toggle("visible");
+  body.classList.toggle("hidden");
 });
-
-const popap = document.querySelector(".popap");
-popap.addEventListener("click", (event) => {
-  const target = event.target;
-  target.classList.toggle("visible");
-});
+const body = document.querySelector("body");
+const popap = document.querySelectorAll(".popap");
+for (let i = 0; i < popap.length; i++) {
+  popap[i].addEventListener("click", (event) => {
+    const target = event.target;
+    popapModal.classList.toggle("visible");
+    body.classList.toggle("hidden");
+  });
+}
 
 const contestSwiper = new Swiper(".contest__swiper", {
   slidesPerView: 5.8,

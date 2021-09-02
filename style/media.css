@@ -275,6 +275,9 @@
   .container {
     max-width: 576px;
   }
+  .header__date-anim {
+    font-size: 200px;
+  }
   .header__burger {
     display: flex;
   }
@@ -376,6 +379,10 @@
 @media screen and (max-width: 576px) {
   .text {
     font-size: 14px;
+  }
+  .header__date-anim {
+    bottom: 230px;
+    font-size: 110px;
   }
   .form__wrapper {
     padding: 50px 20px;
