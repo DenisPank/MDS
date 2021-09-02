@@ -21,6 +21,27 @@ var smoothJumpUp = function () {
   }
 };
 
+const form = document.querySelector(".form__btn");
+const formShipped = document.querySelector(".form__shipped");
+
+form.addEventListener("click", (event) => {
+  const target = event.target;
+  event.preventDefault();
+  formShipped.classList.add("shipped");
+});
+const closeForm = document.querySelector(".close");
+const popapModal = document.querySelector(".popap-modal");
+closeForm.addEventListener("click", (event) => {
+  const target = event.target;
+  popapModal.classList.toggle("visible");
+});
+
+const popap = document.querySelector(".popap");
+popap.addEventListener("click", (event) => {
+  const target = event.target;
+  target.classList.toggle("visible");
+});
+
 const contestSwiper = new Swiper(".contest__swiper", {
   slidesPerView: 5.8,
   spaceBetween: 120,
