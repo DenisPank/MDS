@@ -243,6 +243,9 @@ h4 {
   max-width: 880px;
   width: 100%;
 }
+.header__partners-wrap .header__content {
+  margin-top: 60px;
+}
 .header__partners figure {
   max-width: 190px;
 }
@@ -969,4 +972,26 @@ input {
 }
 .popap-modal.visible {
   display: flex;
+}
+.all-part {
+  padding: 120px 0 180px;
+}
+.all-part__block {
+  width: 100%;
+  padding: 20px;
+  max-width: 320px;
+}
+.all-part__wrapper-img {
+  width: 165px;
+}
+.all-part__text {
+  color: #000;
+  margin-top: 45px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.all-part__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }

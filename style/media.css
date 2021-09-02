@@ -80,10 +80,16 @@
   .partners {
     padding: 60px 0 120px;
   }
+  .all-part__wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 992px;
+  }
+  .all-part__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .header__content-text {
     max-width: 440px;
@@ -278,6 +284,9 @@
   .header__date-anim {
     font-size: 200px;
   }
+  .all-part__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
   .header__burger {
     display: flex;
   }
@@ -375,6 +384,9 @@
   .footer__mail::after {
     display: none;
   }
+  .all-part {
+    padding: 50px 0 80px;
+  }
 }
 @media screen and (max-width: 576px) {
   .text {
@@ -383,6 +395,12 @@
   .header__date-anim {
     bottom: 230px;
     font-size: 110px;
+  }
+  .all-part__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .all-part__block {
+    max-width: 100%;
   }
   .form__wrapper {
     padding: 50px 20px;
