@@ -111,3 +111,14 @@ const commissionSwiper = new Swiper(".commission__swiper", {
     },
   },
 });
+const howPageSwiper = new Swiper(".how-page__swiper", {
+  navigation: {
+    nextEl: ".how-page__swiper-button-next",
+    prevEl: ".how-page__swiper-button-prev",
+  },
+  slidesPerView: 3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 20,
+});

@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="style/media.css" />
   </head>
   <body>
-    <header class="header header__history-wrap">
+    <header class="header">
       <div class="container">
         <nav
           class="
+            header__wrapper
             d-flex
-            header__wrapper header__wrapper-hist
             align-items-center
             justify-content-between
           "
@@ -52,7 +52,7 @@
               />
             </svg>
           </div>
-          <div class="header__menu history__menu">
+          <div class="header__menu">
             <div class="header__menu-mobil">
               <div class="header__wrapper-img mobil">
                 <img
@@ -126,82 +126,283 @@
             </div>
           </div>
         </nav>
+        <div class="header__content">
+          <div class="header__content-img">
+            <figure>
+              <img src="image/ofter/cap.svg" alt="Cap" class="header__cap" />
+              <p class="header__cap-text">цифровой юрист года</p>
+            </figure>
+          </div>
+          <div class="header__content-text">
+            <p class="header__subtitle text">
+              Национальная премия за вклад в развитие цифрового и
+              информационного права в России
+            </p>
+            <h1 class="header__title">Премия цифровой юрист года</h1>
+          </div>
+        </div>
       </div>
     </header>
     <div class="wrapper">
       <main class="main">
-        <section class="history">
-          <div class="line mouse-parallax-bg">
-            <img src="image/ofter/line-1.svg" alt="line" />
-          </div>
-          <div class="line"></div>
+        <section class="how-page">
           <div class="container">
-            <div class="new__inner history__inner">
-              <p class="new__date date">11 июля 2021</p>
-              <p class="new__title main-text history__title">
-                ВиRUсный контент: как медиа и интернет-премия сделали public
-                talks  с ключевыми персонами Рунета
-              </p>
-              <div class="history__img-wrapper">
-                <img
-                  src="image/history/photo.jpg"
-                  alt="photo"
-                  class="news__img"
-                />
+            <div class="how-page__title-wrap">
+              <h2 class="how-page__title gold-text">Как это было</h2>
+              <div class="how-page__date">
+                <a href="#" class="how-page__2019">2019</a>
+                <a href="#" class="how-page__2020 active">2020</a>
               </div>
-              <p class="new__text history__text text">
-                <span class="paragraph">
-                  В прошлом году у РАЭК было много контента, и один из самых
-                  ярких проектов — «ВиRUс дела».
-                </span>
-                <span class="paragraph">
-                  Это серия интервью журналистов NEWS.ru с экспертами
-                  интернет-отрасли и лауреатами «Премии Рунета»   прошлых лет.
-                  Основные темы: digital-тренды, карьера в IT, будущее
-                  интернет-отрасли и медиа, влияние пандемии  на индустрию.
-                  Расскажем, почему решили делать этот спецпроект и каким он
-                  получился.
-                </span>
-                <span class="paragraph">
-                  <b> С чего начался проект </b>
-                </span>
-                <span class="paragraph">
-                  «Премия Рунета» является старейшей и самой престижной наградой
-                  в российской интернет-отрасли. News.ru — генеральный
-                  информационный партнёр Премии, так что хотелось чего-то
-                  большего от сотрудничества, чем публикация пресс-релизов.
-                  Спецпроект — отличное решение, но каким он будет? Лонгрид,
-                  тест, инфографика? При выборе формата разумно отталкиваться от
-                  цели, а цель была рассказать аудитории о главных мейнстримах и
-                  технологиях Рунета.
-                </span>
-
-                <span class="paragraph">
-                  «Интервью — казалось бы, что может быть банальнее? С другой
-                  стороны, пожалуй, только формат интервью подходит для
-                  экспертного контента. Сейчас мы все испытываем пресыщение
-                  информацией: везде много вторичного контента. Мнение
-                  профессионалов — то, что, действительно, остаётся ценной
-                  жемчужиной в океане инфошума.
-                </span>
-              </p>
-              <a href="news.html" class="new__more">
-                <span class="new__arrow" style="transform: rotate(180deg)"
-                  ><svg
-                    width="31"
-                    height="8"
-                    viewBox="0 0 31 8"
+            </div>
+            <h3 class="how-page__subtitle">Номинации премии</h3>
+          </div>
+          <div class="how-page__type">
+            <a href="#" class="how-page__type-link"
+              >За индивидуальный вклад в развитие судебной и правоприменительной
+              практики
+            </a>
+            <a href="#" class="how-page__type-link active"
+              >За индивидуальный вклад в развитие судебной и правоприменительной
+              практики
+            </a>
+            <a href="#" class="how-page__type-link"
+              >За индивидуальный вклад в развитие судебной и правоприменительной
+              практики
+            </a>
+            <a href="#" class="how-page__type-link"
+              >За индивидуальный вклад в развитие судебной и правоприменительной
+              практики
+            </a>
+            <a href="#" class="how-page__type-link"
+              >За индивидуальный вклад в развитие судебной и правоприменительной
+              практики
+            </a>
+            <a href="#" class="how-page__type-link"
+              >За индивидуальный вклад в развитие судебной и правоприменительной
+              практики
+            </a>
+          </div>
+          <div class="container">
+            <div class="how-page__wrap-person">
+              <div class="how-page__candidate-block">
+                <div class="how-page__person-wrap">
+                  <img
+                    src="image/vote/photo.jpg"
+                    alt="person"
+                    class="how-page__photo"
+                  />
+                </div>
+                <div class="how-page__content">
+                  <h4 class="how-page__vote">Голосов: 356</h4>
+                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
+                  <p class="how-page__text text">
+                    Специалист своего дела, заслуженный работник НИУ БелГУ
+                  </p>
+                  <a href="#" class="how-page__more">Узнать подробнее</a>
+                </div>
+              </div>
+              <div class="how-page__candidate-block">
+                <div class="how-page__person-wrap">
+                  <img
+                    src="image/vote/photo.jpg"
+                    alt="person"
+                    class="how-page__photo"
+                  />
+                </div>
+                <div class="how-page__content">
+                  <h4 class="how-page__vote">Голосов: 356</h4>
+                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
+                  <p class="how-page__text text">
+                    Специалист своего дела, заслуженный работник НИУ БелГУ
+                  </p>
+                  <a href="#" class="how-page__more">Узнать подробнее</a>
+                </div>
+              </div>
+              <div class="how-page__candidate-block">
+                <div class="how-page__person-wrap">
+                  <img
+                    src="image/vote/photo.jpg"
+                    alt="person"
+                    class="how-page__photo"
+                  />
+                </div>
+                <div class="how-page__content">
+                  <h4 class="how-page__vote">Голосов: 356</h4>
+                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
+                  <p class="how-page__text text">
+                    Специалист своего дела, заслуженный работник НИУ БелГУ
+                  </p>
+                  <a href="#" class="how-page__more">Узнать подробнее</a>
+                </div>
+              </div>
+              <div class="how-page__candidate-block">
+                <div class="how-page__person-wrap">
+                  <img
+                    src="image/vote/photo.jpg"
+                    alt="person"
+                    class="how-page__photo"
+                  />
+                </div>
+                <div class="how-page__content">
+                  <h4 class="how-page__vote">Голосов: 356</h4>
+                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
+                  <p class="how-page__text text">
+                    Специалист своего дела, заслуженный работник НИУ БелГУ
+                  </p>
+                  <a href="#" class="how-page__more">Узнать подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container container-swiper">
+            <h2 class="how-page__title-swiper title-line">Фотоотчет премии</h2>
+            <div class="how-page__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (1).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (2).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (3).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (4).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (1).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (6).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (7).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (8).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (9).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (10).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (1).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <img
+                      src="image/home/photo (2).jpg"
+                      alt="photo"
+                      class="how__img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="how-page__wrapper-btn">
+                <div class="how-page__swiper-button-prev how-page__button">
+                  <svg
+                    width="26"
+                    height="16"
+                    viewBox="0 0 26 16"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    class="commission__arrow second"
                   >
                     <path
-                      d="M30.3536 4.35355C30.5488 4.15829 30.5488 3.84171 30.3536 3.64645L27.1716 0.464466C26.9763 0.269204 26.6597 0.269204 26.4645 0.464466C26.2692 0.659728 26.2692 0.976311 26.4645 1.17157L29.2929 4L26.4645 6.82843C26.2692 7.02369 26.2692 7.34027 26.4645 7.53553C26.6597 7.7308 26.9763 7.7308 27.1716 7.53553L30.3536 4.35355ZM0 4.5H30V3.5H0V4.5Z"
-                      fill="#101010"
+                      d="M24 14L13.3846 3L1 14"
+                      stroke="#C6A67D"
+                      stroke-width="3"
+                      style="transition: stroke 0.4s ease"
                     />
                   </svg>
-                </span>
-                Назад
-              </a>
+                </div>
+                <div class="how-page__swiper-button-next how-page__button">
+                  <svg
+                    width="26"
+                    height="16"
+                    viewBox="0 0 26 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="commission__arrow second"
+                  >
+                    <path
+                      d="M24 14L13.3846 3L1 14"
+                      stroke="#C6A67D"
+                      stroke-width="3"
+                      style="transition: stroke 0.4s ease"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -336,7 +537,142 @@
         </div>
       </footer>
     </div>
+    <div class="popap-modal">
+      <div class="form__wrapper">
+        <div class="close">
+          <img src="image/ofter/close.svg" alt="close" />
+        </div>
+        <div class="form__shipped">
+          <p class="form__shipped-title">Анкета отправлена!</p>
+          <img src="image/ofter/check.svg" alt="check" class="form__check" />
+        </div>
+        <p class="popap-title">Заполните анкету</p>
+        <form class="form" action="#" method="get">
+          <div class="form__grid">
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title">Номинация:</label>
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Заголовок номинации "
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title">ФИО:</label>
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Введите ФИО"
+              />
+            </div>
 
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title"
+                >Название компании (если есть):</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Введите название"
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title"
+                >Сайт компании (если есть):</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Введите адрес"
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title"
+                >Укажите вашу должность в компании (если есть):</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Введите должность"
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title"
+                >Расскажите о ваших достижениях в области цифрового и
+                информационного права за 2021 год:</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Введите достижения"
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title"
+                >Добавьте ссылки на информационные ресурсы, подтверждающие
+                достижения:</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Введите ссылки"
+              />
+            </div>
+            <div class="form__input-wrapper">
+              <label for="nomin" class="form__input-title"
+                >Прикрепить файлы</label
+              >
+              <input
+                class="form__input"
+                type="text"
+                id="nomin"
+                placeholder="Выберите файл..."
+              />
+            </div>
+          </div>
+          <p class="form__alert">
+            Организационный сбор для консалтинговых, юридических компаний и
+            LegalTech компаний составляет 30 000 рублей.
+          </p>
+          <div class="form__assent">
+            <input
+              class="form__assent-input"
+              type="checkbox"
+              id="assent"
+              name="assent"
+            />
+            <label class="assent-input" for="assent">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.05273 7.26455L5.06571 11.8508L11.754 1.14954"
+                  stroke="#FBFBFB"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+            <p class="assent-text">
+              Согласен(-а) с тем, что участие в номинации платное
+            </p>
+            <button type="submit" class="form__btn btn">Подать заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
