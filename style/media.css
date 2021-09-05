@@ -667,6 +667,9 @@
   .vote {
     background-image: none;
   }
+  .vote__date-anim {
+    display: none;
+  }
 }
 @media screen and (max-width: 576px) {
   .header__wrapper {

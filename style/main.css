@@ -1423,6 +1423,7 @@ span.paragraph {
 }
 .vote__header {
   padding-bottom: 65px;
+  overflow: hidden;
 }
 .vote__header-content {
   margin-top: 65px;
@@ -1503,4 +1504,9 @@ span.paragraph {
 .bg__polyhedron:nth-child(7) {
   top: 85%;
   left: -15%;
+}
+.vote__date-anim {
+  bottom: -40px;
+  pointer-events: none;
+  right: -20px;
 }
