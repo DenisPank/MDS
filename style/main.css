@@ -815,6 +815,9 @@ h4 {
 .new__arrow.exit {
   transform: rotate(180deg);
 }
+.new__more:hover .new__arrow.exit {
+  transform: rotate(180deg) translateX(10px);
+}
 .new__more:hover .new__arrow {
   transform: translateX(10px);
 }
