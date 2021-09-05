@@ -61,7 +61,7 @@ const contestSwiper = new Swiper(".contest__swiper", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 2.2,
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     480: {
@@ -81,6 +81,9 @@ const contestSwiper = new Swiper(".contest__swiper", {
       spaceBetween: 60,
     },
     1400: {
+      slidesPerView: 4.9,
+    },
+    1700: {
       slidesPerView: 5.8,
     },
   },
@@ -168,7 +171,7 @@ const howPageSwiper = new Swiper(".how-page__swiper", {
     },
     992: {},
     1200: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       grid: {
         rows: 2,
       },
@@ -211,21 +214,21 @@ if (formVote) {
     event.preventDefault();
     voteFormEmail.classList.add("shipped");
   });
-}
 
-let code = /[0-9]/;
-let inputCode = document.querySelector(".vote__code");
-let notCode = document.querySelector(".notvalide");
-document.querySelector(".vote__bnt-code").onclick = function (e) {
-  e.preventDefault();
-  if (!validate(code, inputCode.value)) {
-    notCode.classList.add("visible");
-  } else {
-    notCode.classList.remove("visible");
-    formShipped.classList.add("shipped");
-    formCode.style.display = "none";
+  let code = /[0-9]/;
+  let inputCode = document.querySelector(".vote__code");
+  let notCode = document.querySelector(".notvalide");
+  document.querySelector(".vote__bnt-code").onclick = function (e) {
+    e.preventDefault();
+    if (!validate(code, inputCode.value)) {
+      notCode.classList.add("visible");
+    } else {
+      notCode.classList.remove("visible");
+      formShipped.classList.add("shipped");
+      formCode.style.display = "none";
+    }
+  };
+  function validate(regex, inputCode) {
+    return regex.test(inputCode);
   }
-};
-function validate(regex, inputCode) {
-  return regex.test(inputCode);
 }
