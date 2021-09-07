@@ -129,8 +129,8 @@ const typeSwiper = new Swiper(".type__swiper", {
   spaceBetween: 15,
   breakpoints: {
     320: { slidesPerView: 1.2 },
-    480: { slidesPerView: 2 },
-    576: { slidesPerView: 2.1 },
+    480: { slidesPerView: 1.4 },
+    576: { slidesPerView: 1.8 },
     768: { slidesPerView: 2.2 },
     992: { slidesPerView: 2.8 },
     1200: { slidesPerView: 3.2 },
@@ -165,16 +165,18 @@ const howPageSwiper = new Swiper(".how-page__swiper", {
       grid: {
         rows: 1,
       },
-      slidesPerView: 1,
+      slidesPerView: 1.1,
+      spaceBetween: 10,
     },
     480: {
-      slidesPerView: 1,
+      slidesPerView: 1.1,
+      spaceBetween: 10,
       grid: {
         rows: 1,
       },
     },
     576: {
-      slidesPerView: 1,
+      slidesPerView: 1.5,
       grid: {
         rows: 1,
       },

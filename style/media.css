@@ -680,6 +680,16 @@
     border: none;
     padding-bottom: 20px;
   }
+  .how-page__title-swiper {
+    padding: 0 15px;
+  }
+  .container.container-swiper {
+    padding: 0;
+  }
+  .how-page__swiper .swiper-wrapper {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
   .header {
     background-image: url(../image/ofter/line-1.svg);
     background-repeat: no-repeat;
@@ -950,6 +960,7 @@
   }
   .commission__swiper {
     margin-top: 40px;
+    margin-left: 15px;
     max-width: 330px;
   }
   .commission__content {

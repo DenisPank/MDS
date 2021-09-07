@@ -807,9 +807,13 @@ h4 {
 .new__title {
   color: #101010;
   line-height: 0.7em;
+  transition: opacity 0.4s ease;
 }
 .new__inner {
   max-width: 430px;
+}
+.new__inner:hover .new__title {
+  opacity: 0.7;
 }
 .new__title.main-text {
   line-height: 1.3em;
@@ -821,10 +825,16 @@ h4 {
   font-size: 17px;
   font-weight: 600;
   color: #101010;
-  transition: opacity 0.4s ease;
+  transition: color 0.4s ease;
 }
 .new__more:hover {
-  opacity: 0.7;
+  color: #c6a67d;
+}
+.new__more path {
+  transition: fill 0.4s ease;
+}
+.new__more:hover path {
+  fill: #c6a67d;
 }
 .new__text {
   line-height: 1.6em;
@@ -1382,7 +1392,7 @@ span.paragraph {
   object-position: top;
   transition: transform 0.4s ease;
 }
-.how-page__photo:hover {
+.how__img:hover {
   transform: scale(1.05);
 }
 .how-page__person-wrap {
@@ -1405,9 +1415,10 @@ span.paragraph {
 }
 .more-link-label {
   display: block;
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: 600;
   font-size: 17px;
+  text-decoration: underline;
 }
 .vote {
   background-image: url("../image/ofter/partners-bg.svg"),
@@ -1556,4 +1567,7 @@ span.paragraph {
 }
 .form__check {
   margin: 0 auto;
+}
+.new__title.history__title {
+  opacity: 1 !important;
 }
