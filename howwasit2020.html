@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="style/fancybox.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/media.css" />
   </head>
@@ -127,17 +128,76 @@
             </figure>
           </div>
           <div class="header__content-text">
-            <h1 class="header__title">Народное голосование</h1>
+            <h1 class="header__title">Премия цифровой юрист года</h1>
           </div>
         </div>
-        <div class="header__date-anim vote__date-anim">2021</div>
       </div>
     </header>
     <div class="wrapper">
       <main class="main">
-        <section class="vote">
+        <section class="how-page">
           <div class="container">
-            <div class="vote__wrapper">
+            <div class="how-page__title-wrap">
+              <h2 class="how-page__title gold-text">Как это было</h2>
+              <div class="how-page__date">
+                <a href="howwasit2019.html" class="how-page__2019">2019</a>
+                <a href="howwasit2020.html" class="how-page__2020 active"
+                  >2020</a
+                >
+              </div>
+            </div>
+            <h3 class="how-page__subtitle">Номинации премии</h3>
+          </div>
+          <div class="how-page__type">
+            <div class="type__swiper">
+              <div class="swiper-wrapper type__swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="how-page__type-link"
+                    >За индивидуальный вклад в развитие судебной и
+                    правоприменительной практики
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="how-page__wrap-person">
               <div class="how-page__candidate-block">
                 <div class="how-page__person-wrap">
                   <img
@@ -166,7 +226,6 @@
                     участие в формировании систем массового участия.
                   </p>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
               </div>
               <div class="how-page__candidate-block">
                 <div class="how-page__person-wrap">
@@ -196,7 +255,6 @@
                     участие в формировании систем массового участия.
                   </p>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
               </div>
               <div class="how-page__candidate-block">
                 <div class="how-page__person-wrap">
@@ -215,18 +273,7 @@
                   <a href="#" class="how-page__more popap__person"
                     >Узнать подробнее</a
                   >
-                  <p class="how-page__text text">
-                    Задача организации, в особенности же консультация с широким
-                    активом требуют от нас анализа соответствующий условий
-                    активизации. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры представляет собой
-                    интересный эксперимент проверки новых предложений. Таким
-                    образом постоянный количественный рост и сфера нашей
-                    активности обеспечивает широкому кругу (специалистов)
-                    участие в формировании систем массового участия.
-                  </p>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
               </div>
               <div class="how-page__candidate-block">
                 <div class="how-page__person-wrap">
@@ -245,138 +292,218 @@
                   <a href="#" class="how-page__more popap__person"
                     >Узнать подробнее</a
                   >
-                  <p class="how-page__text text">
-                    Задача организации, в особенности же консультация с широким
-                    активом требуют от нас анализа соответствующий условий
-                    активизации. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры представляет собой
-                    интересный эксперимент проверки новых предложений. Таким
-                    образом постоянный количественный рост и сфера нашей
-                    активности обеспечивает широкому кругу (специалистов)
-                    участие в формировании систем массового участия.
-                  </p>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
               </div>
-              <div class="how-page__candidate-block">
-                <div class="how-page__person-wrap">
-                  <img
-                    src="image/vote/photo.jpg"
-                    alt="person"
-                    class="how-page__photo"
-                  />
+            </div>
+          </div>
+          <div class="container container-swiper">
+            <h2 class="how-page__title-swiper title-line">Фотоотчет премии</h2>
+            <div class="how-page__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (1).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (1).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
                 </div>
-                <div class="how-page__content">
-                  <h4 class="how-page__vote">Голосов: 356</h4>
-                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
-                  <p class="how-page__text text">
-                    Специалист своего дела, заслуженный работник НИУ БелГУ
-                  </p>
-                  <a href="#" class="how-page__more popap__person"
-                    >Узнать подробнее</a
-                  >
-                  <p class="how-page__text text">
-                    Задача организации, в особенности же консультация с широким
-                    активом требуют от нас анализа соответствующий условий
-                    активизации. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры представляет собой
-                    интересный эксперимент проверки новых предложений. Таким
-                    образом постоянный количественный рост и сфера нашей
-                    активности обеспечивает широкому кругу (специалистов)
-                    участие в формировании систем массового участия.
-                  </p>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (2).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (2).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (3).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (3).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (4).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (4).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (5).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (5).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (6).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (6).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (1).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (1).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (2).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (2).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (3).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (3).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (4).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (4).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (5).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (5).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="how-page__photo">
+                    <a
+                      href="image/photo-report/photo (6).jpg"
+                      data-fancybox="gallery"
+                    >
+                      <img
+                        src="image/photo-report/photo (6).jpg"
+                        alt="photo"
+                        class="how__img"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="how-page__candidate-block">
-                <div class="how-page__person-wrap">
-                  <img
-                    src="image/vote/photo.jpg"
-                    alt="person"
-                    class="how-page__photo"
-                  />
-                </div>
-                <div class="how-page__content">
-                  <h4 class="how-page__vote">Голосов: 356</h4>
-                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
-                  <p class="how-page__text text">
-                    Специалист своего дела, заслуженный работник НИУ БелГУ
-                  </p>
-                  <a href="#" class="how-page__more popap__person"
-                    >Узнать подробнее</a
+              <div class="how-page__wrapper-btn">
+                <div class="how-page__swiper-button-prev how-page__button">
+                  <svg
+                    width="26"
+                    height="16"
+                    viewBox="0 0 26 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="commission__arrow second"
                   >
-                  <p class="how-page__text text">
-                    Задача организации, в особенности же консультация с широким
-                    активом требуют от нас анализа соответствующий условий
-                    активизации. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры представляет собой
-                    интересный эксперимент проверки новых предложений. Таким
-                    образом постоянный количественный рост и сфера нашей
-                    активности обеспечивает широкому кругу (специалистов)
-                    участие в формировании систем массового участия.
-                  </p>
+                    <path
+                      d="M24 14L13.3846 3L1 14"
+                      stroke="#C6A67D"
+                      stroke-width="3"
+                      style="transition: stroke 0.4s ease"
+                    />
+                  </svg>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
-              </div>
-              <div class="how-page__candidate-block">
-                <div class="how-page__person-wrap">
-                  <img
-                    src="image/vote/photo.jpg"
-                    alt="person"
-                    class="how-page__photo"
-                  />
-                </div>
-                <div class="how-page__content">
-                  <h4 class="how-page__vote">Голосов: 356</h4>
-                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
-                  <p class="how-page__text text">
-                    Специалист своего дела, заслуженный работник НИУ БелГУ
-                  </p>
-                  <a href="#" class="how-page__more popap__person"
-                    >Узнать подробнее</a
+                <div class="how-page__swiper-button-next how-page__button">
+                  <svg
+                    width="26"
+                    height="16"
+                    viewBox="0 0 26 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="commission__arrow second"
                   >
-                  <p class="how-page__text text">
-                    Задача организации, в особенности же консультация с широким
-                    активом требуют от нас анализа соответствующий условий
-                    активизации. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры представляет собой
-                    интересный эксперимент проверки новых предложений. Таким
-                    образом постоянный количественный рост и сфера нашей
-                    активности обеспечивает широкому кругу (специалистов)
-                    участие в формировании систем массового участия.
-                  </p>
+                    <path
+                      d="M24 14L13.3846 3L1 14"
+                      stroke="#C6A67D"
+                      stroke-width="3"
+                      style="transition: stroke 0.4s ease"
+                    />
+                  </svg>
                 </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
-              </div>
-              <div class="how-page__candidate-block">
-                <div class="how-page__person-wrap">
-                  <img
-                    src="image/vote/photo.jpg"
-                    alt="person"
-                    class="how-page__photo"
-                  />
-                </div>
-                <div class="how-page__content">
-                  <h4 class="how-page__vote">Голосов: 356</h4>
-                  <h4 class="how-page__name">Семенов Семен Семенович</h4>
-                  <p class="how-page__text text">
-                    Специалист своего дела, заслуженный работник НИУ БелГУ
-                  </p>
-                  <a href="#" class="how-page__more popap__person"
-                    >Узнать подробнее</a
-                  >
-                  <p class="how-page__text text">
-                    Задача организации, в особенности же консультация с широким
-                    активом требуют от нас анализа соответствующий условий
-                    активизации. Идейные соображения высшего порядка, а также
-                    укрепление и развитие структуры представляет собой
-                    интересный эксперимент проверки новых предложений. Таким
-                    образом постоянный количественный рост и сфера нашей
-                    активности обеспечивает широкому кругу (специалистов)
-                    участие в формировании систем массового участия.
-                  </p>
-                </div>
-                <button class="vote__btn btn popap">Отдать голос</button>
               </div>
             </div>
           </div>
@@ -625,164 +752,8 @@
           </p>
         </div>
       </div>
-      <div class="person__card-4">
-        <div class="close-person">
-          <img src="image/ofter/close.svg" alt="" />
-        </div>
-        <div class="person__photo">
-          <img
-            class="person__img"
-            src="image/vote/more/photo.jpg"
-            alt="Person"
-          />
-        </div>
-        <div class="person__content">
-          <h4 class="person__vote">Голосов: 356</h4>
-          <h4 class="person__name">Семенов Семен Семенович</h4>
-          <p class="person__text text">
-            Специалист своего дела, заслуженный работник НИУ БелГУ
-          </p>
-          <p class="person__about text">
-            Задача организации, в особенности же консультация с широким активом
-            требуют от нас анализа соответствующий условий активизации. Идейные
-            соображения высшего порядка, а также укрепление и развитие структуры
-            представляет собой интересный эксперимент проверки новых
-            предложений. Таким образом постоянный количественный рост и сфера
-            нашей активности обеспечивает широкому кругу (специалистов) участие
-            в формировании систем массового участия.
-          </p>
-        </div>
-      </div>
-      <div class="person__card-5">
-        <div class="close-person">
-          <img src="image/ofter/close.svg" alt="" />
-        </div>
-        <div class="person__photo">
-          <img
-            class="person__img"
-            src="image/vote/more/photo.jpg"
-            alt="Person"
-          />
-        </div>
-        <div class="person__content">
-          <h4 class="person__vote">Голосов: 356</h4>
-          <h4 class="person__name">Семенов Семен Семенович</h4>
-          <p class="person__text text">
-            Специалист своего дела, заслуженный работник НИУ БелГУ
-          </p>
-          <p class="person__about text">
-            Задача организации, в особенности же консультация с широким активом
-            требуют от нас анализа соответствующий условий активизации. Идейные
-            соображения высшего порядка, а также укрепление и развитие структуры
-            представляет собой интересный эксперимент проверки новых
-            предложений. Таким образом постоянный количественный рост и сфера
-            нашей активности обеспечивает широкому кругу (специалистов) участие
-            в формировании систем массового участия.
-          </p>
-        </div>
-      </div>
-      <div class="person__card-6">
-        <div class="close-person">
-          <img src="image/ofter/close.svg" alt="" />
-        </div>
-        <div class="person__photo">
-          <img
-            class="person__img"
-            src="image/vote/more/photo.jpg"
-            alt="Person"
-          />
-        </div>
-        <div class="person__content">
-          <h4 class="person__vote">Голосов: 356</h4>
-          <h4 class="person__name">Семенов Семен Семенович</h4>
-          <p class="person__text text">
-            Специалист своего дела, заслуженный работник НИУ БелГУ
-          </p>
-          <p class="person__about text">
-            Задача организации, в особенности же консультация с широким активом
-            требуют от нас анализа соответствующий условий активизации. Идейные
-            соображения высшего порядка, а также укрепление и развитие структуры
-            представляет собой интересный эксперимент проверки новых
-            предложений. Таким образом постоянный количественный рост и сфера
-            нашей активности обеспечивает широкому кругу (специалистов) участие
-            в формировании систем массового участия.
-          </p>
-        </div>
-      </div>
-      <div class="person__card-7">
-        <div class="close-person">
-          <img src="image/ofter/close.svg" alt="" />
-        </div>
-        <div class="person__photo">
-          <img
-            class="person__img"
-            src="image/vote/more/photo.jpg"
-            alt="Person"
-          />
-        </div>
-        <div class="person__content">
-          <h4 class="person__vote">Голосов: 356</h4>
-          <h4 class="person__name">Семенов Семен Семенович</h4>
-          <p class="person__text text">
-            Специалист своего дела, заслуженный работник НИУ БелГУ
-          </p>
-          <p class="person__about text">
-            Задача организации, в особенности же консультация с широким активом
-            требуют от нас анализа соответствующий условий активизации. Идейные
-            соображения высшего порядка, а также укрепление и развитие структуры
-            представляет собой интересный эксперимент проверки новых
-            предложений. Таким образом постоянный количественный рост и сфера
-            нашей активности обеспечивает широкому кругу (специалистов) участие
-            в формировании систем массового участия.
-          </p>
-        </div>
-      </div>
     </div>
-    <div class="popap-modal">
-      <div class="form__wrapper vote-form">
-        <div class="close">
-          <img src="image/ofter/close.svg" alt="close" />
-        </div>
-        <form class="form vote__form vote__form-email" action="#" method="get">
-          <p class="popap-title vote-title">
-            Для того, чтобы проголосовать за выбранного вами участника, введите
-            код подтверждения, который придет на вашу эл. почту или телефон.
-          </p>
-          <input
-            class="vote__input"
-            type="email"
-            id="email"
-            placeholder="почта или телефон"
-            required
-          />
-          <button type="submit" class="vote__btn-form btn">
-            Подать заявку
-          </button>
-        </form>
-        <form class="form vote__form vote__form-code" action="#" method="get">
-          <p class="popap-title vote-title vote-title-code">
-            На указанную вами эл. почту mail@mail.ru был отправлен код
-            подтверждения.
-          </p>
-          <span class="notvalide">Введенный вами код неверный</span>
-          <input
-            class="vote__input vote__code"
-            type="text"
-            id="email"
-            placeholder="Введите код"
-            required
-          />
-          <a href="#" class="notvalide return">Отправить код повторно </a>
-          <button type="submit" class="vote__btn-form btn vote__bnt-code">
-            Подать заявку
-          </button>
-        </form>
-        <div class="form__shipped">
-          <p class="form__shipped-title">Ваш голос принят!</p>
-          <img src="image/ofter/check.svg" alt="check" class="form__check" />
-        </div>
-      </div>
-    </div>
+    <script src="js/fancybox.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

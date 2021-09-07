@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="style/media.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header vote__header">
       <div class="container">
         <nav
           class="
@@ -66,7 +66,7 @@
                   <a href="vote.html" class="header__link">Голосование</a>
                 </li>
                 <li class="header__item">
-                  <a href="howwasit.html" class="header__link">Номинанты</a>
+                  <a href="howwasit2020.html" class="header__link">Номинанты</a>
                 </li>
               </ul>
               <div class="header__network">
@@ -120,18 +120,14 @@
             </div>
           </div>
         </nav>
-        <div class="header__content">
-          <div class="header__content-img">
+        <div class="header__content vote__header-content">
+          <div class="header__content-img vote__content-img">
             <figure>
               <img src="image/ofter/cap.svg" alt="Cap" class="header__cap" />
-              <p class="header__cap-text">цифровой юрист года</p>
+              <p class="header__cap-text vote__cap-text">цифровой юрист года</p>
             </figure>
           </div>
           <div class="header__content-text">
-            <p class="header__subtitle text">
-              Национальная премия за вклад в развитие цифрового и
-              информационного права в России
-            </p>
             <h1 class="header__title">Премия цифровой юрист года</h1>
           </div>
         </div>
@@ -144,8 +140,10 @@
             <div class="how-page__title-wrap">
               <h2 class="how-page__title gold-text">Как это было</h2>
               <div class="how-page__date">
-                <a href="#" class="how-page__2019">2019</a>
-                <a href="#" class="how-page__2020 active">2020</a>
+                <a href="howwasit2019.html" class="how-page__2019 active"
+                  >2019</a
+                >
+                <a href="howwasit2020.html" class="how-page__2020">2020</a>
               </div>
             </div>
             <h3 class="how-page__subtitle">Номинации премии</h3>
@@ -214,9 +212,13 @@
                   <p class="how-page__text text">
                     Специалист своего дела, заслуженный работник НИУ БелГУ
                   </p>
-                  <a href="#" class="how-page__more popap__person"
-                    >Узнать подробнее</a
+                  <button
+                    class="how-page__more popap__person"
+                    id="more-link"
+                    name="more-link"
                   >
+                    Узнать подробнее
+                  </button>
                   <p class="how-page__text text">
                     Задача организации, в особенности же консультация с широким
                     активом требуют от нас анализа соответствующий условий
@@ -226,6 +228,9 @@
                     образом постоянный количественный рост и сфера нашей
                     активности обеспечивает широкому кругу (специалистов)
                     участие в формировании систем массового участия.
+                    <label for="more-link" class="more-link-label"
+                      >Свернуть</label
+                    >
                   </p>
                 </div>
               </div>

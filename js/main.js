@@ -123,6 +123,9 @@ const commissionSwiper = new Swiper(".commission__swiper", {
 });
 const typeSwiper = new Swiper(".type__swiper", {
   slidesPerView: 5,
+  autoplay: {
+    delay: 3000,
+  },
   spaceBetween: 15,
   breakpoints: {
     320: { slidesPerView: 1.2 },
@@ -132,6 +135,19 @@ const typeSwiper = new Swiper(".type__swiper", {
     992: { slidesPerView: 2.8 },
     1200: { slidesPerView: 3.2 },
     1400: { slidesPerView: 5 },
+  },
+});
+const newBlock = new Swiper(".new__block", {
+  slidesPerView: 3,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1, loop: true },
+    480: { slidesPerView: 1.2, loop: true },
+    576: { slidesPerView: 1.5, loop: true },
+    768: { slidesPerView: 2, loop: true },
+    992: { slidesPerView: 3, loop: false },
   },
 });
 const howPageSwiper = new Swiper(".how-page__swiper", {
