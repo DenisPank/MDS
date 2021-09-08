@@ -189,7 +189,7 @@
   .prize__inner,
   .prize__block {
     max-width: 310px;
-    height: 525px;
+    height: 435px;
   }
   .prize__block {
     padding: 28px;
@@ -311,7 +311,8 @@
   .prize__inner,
   .prize__block {
     max-width: calc(100% - 10px);
-    height: 525px;
+    min-height: 375px;
+    height: auto;
   }
   .part__card-first {
     max-width: 430px;
@@ -838,6 +839,7 @@
     max-width: 100%;
     width: 100%;
     height: fit-content;
+    min-height: fit-content;
   }
   .prize__title {
     font-size: 20px;

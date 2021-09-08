@@ -1571,3 +1571,38 @@ span.paragraph {
 .new__title.history__title {
   opacity: 1 !important;
 }
+.header__cap-object {
+  width: 100%;
+}
+.gallery {
+  display: block;
+}
+
+.cap__path {
+  animation: stretch 2s 1;
+}
+@keyframes stretch {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.cap__path-part {
+  animation: stretch-part 2s 1;
+  animation-timing-function: cubic-bezier(0.28, 0.54, 0.17, 0.86);
+}
+@keyframes stretch-part {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
