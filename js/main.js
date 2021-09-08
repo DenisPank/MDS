@@ -258,3 +258,12 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     );
   },
 });
+
+wow = new WOW({
+  boxClass: "wow",
+  animateClass: "animated",
+  offset: 0,
+  mobile: false,
+  live: false,
+});
+wow.init();

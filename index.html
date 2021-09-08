@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="style/animate.css" />
     <link rel="stylesheet" href="style/fancybox.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/media.css" />
@@ -143,7 +144,7 @@
       <main class="main position-relative">
         <section class="prize">
           <div class="container">
-            <div class="prize__wrapper">
+            <div class="prize__wrapper wow fadeInUp">
               <div class="prize__inner">
                 <h2 class="prize__title">Номинации премии</h2>
                 <p class="prize__text text">
@@ -358,7 +359,10 @@
               class="part__wrapper"
               style="justify-content: start; margin-top: 75px"
             >
-              <div class="part__card part__card-first border">
+              <div
+                class="part__card part__card-first border wow fadeInUp"
+                data-wow-duration="2s"
+              >
                 <p class="part__text text">
                   Мы решили, что будет правильным, если лучшего преподавателя
                   выберут его студенты, поэтому в номинации лучший преподаватель
@@ -369,7 +373,10 @@
                   области цифрового права
                 </p>
               </div>
-              <div class="part__card part__card-second">
+              <div
+                class="part__card part__card-second wow fadeInUp"
+                data-wow-duration="2s"
+              >
                 <h3 class="part__subtitle">Номинация</h3>
                 <p class="part__text">Лучший преподаватель цифрового права</p>
                 <button class="part__btn btn popap">
@@ -709,7 +716,7 @@
               <div class="how__line"></div>
               <a href="howwasit2020.html" class="how__all">Посмотреть все</a>
             </div>
-            <div class="how__wrapper-photo">
+            <div class="how__wrapper-photo wow fadeInUp">
               <div class="how__photo">
                 <a href="image/home/photo (10).jpg" data-fancybox="gallery">
                   <img
@@ -1365,6 +1372,7 @@
     </div>
     <script src="js/fancybox.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
