@@ -613,6 +613,7 @@
   }
   .header {
     position: relative;
+    overflow: visible;
   }
   .header__wrapper-img.mobil {
     display: block;
@@ -674,6 +675,13 @@
   }
   .vote__date-anim {
     display: none;
+  }
+  .line__path {
+    display: none;
+  }
+  .header__bg-line {
+    width: 100%;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 576px) {
