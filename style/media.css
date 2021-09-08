@@ -582,6 +582,8 @@
     pointer-events: none;
   }
   .history__menu {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
   }
   .header__list {
@@ -642,6 +644,8 @@
     max-width: 546px;
   }
   .footer__about {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
   .footer__bottom-wrapper {
@@ -652,6 +656,8 @@
   }
   .footer__link-bottom,
   .footer__link-bottom {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .mouse-parallax-bg {
@@ -797,6 +803,8 @@
   }
 
   .how-page__swiper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   h4 {
@@ -846,7 +854,11 @@
   .prize__block {
     max-width: 100%;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
   }
   .prize__title {
@@ -926,9 +938,13 @@
   .calendar__number {
     font-size: 80px;
     text-align: start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .calendar__number-wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     grid-row: 1/3;
   }

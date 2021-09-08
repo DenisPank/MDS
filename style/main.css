@@ -49,6 +49,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 li,
@@ -117,6 +118,14 @@ h4 {
 }
 .border {
   border: 2px solid;
+  -o-border-image: linear-gradient(
+    158.2deg,
+    #8a511c -64.29%,
+    #ab821d -29.62%,
+    #f7d67e 15.59%,
+    #ab821d 66.02%,
+    #8a511c 86.43%
+  );
   border-image: linear-gradient(
     158.2deg,
     #8a511c -64.29%,
@@ -544,6 +553,8 @@ h4 {
   color: #101010;
   margin-top: auto;
   padding: 23px 58px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #c6a67d;
 }
@@ -580,6 +591,8 @@ h4 {
 .calendar__number-wrapper {
   z-index: 2;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .calendar__number-wrapper::before {
@@ -756,8 +769,12 @@ h4 {
 }
 .how__title {
   font-size: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   line-height: 0.9em;
 }
@@ -866,6 +883,8 @@ h4 {
   padding: 60px 0 180px;
 }
 .partners__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   color: #101010;
 }
@@ -926,6 +945,30 @@ input {
   font-size: 15px;
   color: #6d6d6d;
   font-family: "Montserrat", sans-serif;
+}
+.form__input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #6d6d6d;
+  font-family: "Montserrat", sans-serif;
+  color: #6d6d6d;
+}
+.form__input::-moz-placeholder {
+  font-size: 15px;
+  color: #6d6d6d;
+  font-family: "Montserrat", sans-serif;
+  color: #6d6d6d;
+}
+.form__input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #6d6d6d;
+  font-family: "Montserrat", sans-serif;
+  color: #6d6d6d;
+}
+.form__input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #6d6d6d;
+  font-family: "Montserrat", sans-serif;
+  color: #6d6d6d;
 }
 .form__input::placeholder {
   font-size: 15px;
@@ -1293,6 +1336,8 @@ span.paragraph {
 }
 
 .how-page__swiper .swiper-slide {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -1332,6 +1377,8 @@ span.paragraph {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #f2f2f2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   max-width: 1260px;
 }
@@ -1389,6 +1436,7 @@ span.paragraph {
 .how-page__photo {
   width: 100%;
   height: 340px;
+  -o-object-position: top;
   object-position: top;
   transition: transform 0.4s ease;
 }
@@ -1579,7 +1627,19 @@ span.paragraph {
 }
 
 .cap__path {
+  -webkit-animation: stretch 2s 1;
   animation: stretch 2s 1;
+}
+@-webkit-keyframes stretch {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 @keyframes stretch {
   0% {
@@ -1593,8 +1653,20 @@ span.paragraph {
   }
 }
 .cap__path-part {
+  -webkit-animation: stretch-part 2s 1;
   animation: stretch-part 2s 1;
+  -webkit-animation-timing-function: cubic-bezier(0.22, 0.06, 0, 0.96);
   animation-timing-function: cubic-bezier(0.22, 0.06, 0, 0.96);
+}
+@-webkit-keyframes stretch-part {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
 @keyframes stretch-part {
   0% {
@@ -1613,8 +1685,20 @@ span.paragraph {
   top: -250px;
 }
 .line__path {
+  -webkit-animation: line__path 2s 1;
   animation: line__path 2s 1;
+  -webkit-animation-timing-function: cubic-bezier(0.22, 0.06, 0, 0.96);
   animation-timing-function: cubic-bezier(0.22, 0.06, 0, 0.96);
+}
+@-webkit-keyframes line__path {
+  0% {
+    transform: translate(-500px, 0) rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+    opacity: 1;
+  }
 }
 @keyframes line__path {
   0% {
